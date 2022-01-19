@@ -1,4 +1,7 @@
+import 'reflect-metadata'
 import express from 'express'
+
+import './database'
 
 const app = express()
 
@@ -13,3 +16,5 @@ app.post('/test-post', (request, response) => {
 app.listen(3333, () => {
   console.log('Server is Running 🔥')
 })
+
+// 1h 03min 28seg
