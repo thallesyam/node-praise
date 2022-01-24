@@ -5,7 +5,9 @@ import 'express-async-errors'
 import './database'
 import { router } from './routes'
 
+const PORT = 3333
 const app = express()
+
 app.use(express.json())
 
 app.use(router)
@@ -25,6 +27,6 @@ app.use(
   }
 )
 
-app.listen(3333, () => {
-  console.log('Server is Running 🔥')
+app.listen(PORT, () => {
+  console.log(`Server is running at port ${PORT}`)
 })
